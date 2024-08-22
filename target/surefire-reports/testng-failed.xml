@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="alankar.framework.tests.SubmitOrderTest">
+        <methods>
+          <include name="OrderHistoryTest"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+        </methods>
+      </class> <!-- alankar.framework.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+  <test thread-count="5" name="Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="alankar.framework.tests.ErrorValidationsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+          <include name="LoginErrorValidation"/>
+          <include name="ProductErrorValidation"/>
+        </methods>
+      </class> <!-- alankar.framework.tests.ErrorValidationsTest -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
